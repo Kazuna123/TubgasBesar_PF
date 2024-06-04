@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row d-flex justify-content-center gap-5 ">
                 <div class="col-md-4 ">
-                    <img src="https://source.unsplash.com/500x500?room" class="img-fluid" alt="room">
+                    <img src="{{ Storage::url($kos->gambar) }}" alt="{{ $kos->gambar }}" class="card-img" style="max-height: 250px; max-width: 500px;">
                 </div>
                 <div class="col-md-7 d-flex flex-column justify-content-between">
                     <div>
@@ -13,7 +13,7 @@
                         <p><small class="text-muted">{{ $kos->alamat }}</small></p>
                         <p>Harga Kos : @currency($kos->harga),00</p>
                         <p>Fasilitas : {{ $kos->fasilitass->keterangan }}</p>
-                        <p>Jarak dari Universitas Jember : {{ $kos->jarak }} KM</p>
+                        <p>Jarak dari Universitas telkom surabaya : {{ $kos->jarak }} KM</p>
                         <p>Luas Kamar : {{ $kos->luas->nama }}</p>
                         <p>Kos {{ $kos->tipe->nama }}</p>
                     </div>
