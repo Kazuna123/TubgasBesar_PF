@@ -1,15 +1,15 @@
-@extends('admin.index.layout.main')
+{{-- @extends('admin.index.layout.main')
 @section('container')
 
 
 
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Edit Alternatif</h1>        
+        <h1 class="h2">Edit Alternatif</h1>
 </div>
-<div class="row mb-3"> 
+<div class="row mb-3">
     <div class="col-lg-8 d-flex">
         <a href="/data-alternatif" class="btn btn-success ">Back</a>
-    </div>   
+    </div>
 </div>
 
 <div class="row">
@@ -79,4 +79,4 @@
 </div>
 
 
-    @endsection
+    @endsection --}}
