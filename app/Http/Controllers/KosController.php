@@ -86,6 +86,8 @@ class KosController extends Controller
             'tipe' => Tipe::all()
 
         ]);
+        $indekos = Indekos::find($id);
+        return view('indekos.show', compact('indekos'));
     }
 
     public function edit(Kos $dashboard)

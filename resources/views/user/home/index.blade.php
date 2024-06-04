@@ -3,7 +3,7 @@
 <section id="jumbotron" class="jumbotron-fluid background-jumbotron">
 
     <div class="container-fluid py-5 text-center">
-        <h1 class="display-3 fw-bold">Rekomendasi Kos</h1>
+        <h1 class="display-3 fw-bold">Sewa Online</h1>
         <p >Dapatkan rekomendasi kos yang akan ditinggali dengan menggunakan metode SMART <br>( Simple Multi Attribute Rating Technique )</p>
 
     </div>
@@ -24,16 +24,19 @@
                         <div class="position-absolute bg-dark p-2 " ><a href="" class="text-decoration-none text-white ">Penuh</a></div>
                     @endif
                     <a href=""><img src="https://source.unsplash.com/400x400?room" class="card-img-top" alt="room"></a> --}}
-                    <div class="card  text-white">
-                        <a href="/home/{{ $kos->slug }}"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKp9P4oPkPfa5Iiv-rtJ2mP6fqgoecOI8Ezjx6Ncc9Yw&s" class="card-img" alt="room"></a>
+                    <div class="card text-white">
+                        <a href="/home/{{ $kos->slug }}">
+                            <img src="{{ Storage::url($kos->gambar) }}" alt="{{ $kos->gambar }}" class="card-img" style="max-height: 250px; max-width: 500px;">
+                        </a>
                         @if ($kos->is_full)
                         <a href="/home/{{ $kos->slug }}" class="d-block text-light">
-                        <div class="card-img-overlay d-flex align-items-center p-0 ">
-                            <h5 class="card-title text-center flex-fill bg-dark p-4">PENUH</h5>
-                        </div>
+                            <div class="card-img-overlay d-flex align-items-center p-0">
+                                <h5 class="card-title text-center flex-fill bg-dark p-4">PENUH</h5>
+                            </div>
                         </a>
                         @endif
                     </div>
+
                         <div class="card-body">
                             <h5 class="card-title">
                                 <a href="/home/{{ $kos->slug }}" class="text-decoration-none text-dark text-capitalize ">{{ $kos->nama }}</a>

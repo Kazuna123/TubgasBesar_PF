@@ -36,6 +36,7 @@ Route::post('/register', [RegisterController::class, 'store']);
 Route::post('/kos/store', [KosController::class, 'store']);
 Route::post('/kos/store', [KosController::class, 'store']);
 Route::get('/rekomendasi', [SmartController::class, 'index']);
+Route::get('/indekos/{id}', [IndekosController::class, 'show']);
 
 // Route::get('/', function () {
 //     return view('index.index');
