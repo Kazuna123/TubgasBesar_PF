@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row d-flex justify-content-center gap-5 ">
                 <div class="col-md-4 ">
-                    <img src="{{ Storage::url($kos->gambar) }}" alt="{{ $kos->gambar }}" class="card-img" style="max-height: 250px; max-width: 500px;">
+                    <img src="{{ Storage::url($kos->gambar) }}" alt="{{ $kos->gambar }}" class="img-fluid" style="height: 450px; width: 450px;">
                 </div>
                 <div class="col-md-7 d-flex flex-column justify-content-between">
                     <div>

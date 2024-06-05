@@ -65,8 +65,9 @@ class KosController extends Controller
         ]);
 
            // Handle the image upload
-        if($request->file('gambar')) {
-            $validatedData['gambar'] = $request->file('gambar')->store('liveware');
+           if ($request->file('gambar')) {
+            $path = $request->file('gambar')->store('kos-images', 'public');
+            $validatedData['gambar'] = $path;
         }
         Kos::create($validatedData);
         // createAlternatif();

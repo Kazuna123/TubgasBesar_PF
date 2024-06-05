@@ -37,6 +37,11 @@ Route::post('/kos/store', [KosController::class, 'store']);
 Route::post('/kos/store', [KosController::class, 'store']);
 Route::get('/rekomendasi', [SmartController::class, 'index']);
 Route::get('/indekos/{id}', [IndekosController::class, 'show']);
+Route::post('/kos/store', [KosController::class, 'store'])->name('kos.store');
+Route::get('/kos/{id}', [KosController::class, 'show'])->name('kos.show');
+Route::get('/kos/{rekomendasi_ko}', [KosController::class, 'show'])->name('kos.show');
+
+
 
 // Route::get('/', function () {
 //     return view('index.index');

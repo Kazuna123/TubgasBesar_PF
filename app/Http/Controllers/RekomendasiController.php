@@ -40,7 +40,8 @@ class RekomendasiController extends Controller
      */
     public function show(Kos $rekomendasi_ko)
     {
-        return view('admin.rekomendasi-kos.info-kos', [
+
+        return view('admin.rekomendasi-kos.info-kos.show', [
             'titleWeb' => 'Rekomendasi Kos',
             'kos' => $rekomendasi_ko,
         ]);

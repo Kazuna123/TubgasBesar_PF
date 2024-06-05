@@ -23,21 +23,25 @@
         <table class="table  table-striped table-hover table-sm table-bordered">
         <thead class="bg-primary text-light  ">
             <tr>
-            <th scope="col" class="py-2 ">Nama Kos</th>
-            <th scope="col" class="py-2 ">Gambar</th>
-            <th scope="col" class="py-2 ">{{ $kos->nama }}</th>
+            <th scope="col" class="py-2 ">keterangan</th>
+            <th scope="col" class="py-2 ">Detail</th>
+
             </tr>
         </thead>
         <tbody>
+            <tr>
+                <td>Nama Kos</td>
+                <td scope="col" class="py-2 ">{{ $kos->nama }}</td>
+            </tr>
             <tr>
                 <td>Alamat kos</td>
                 <td>{{ $kos->alamat }}</td>
             </tr>
             <tr>
-                <td>Alamat kos</td>
-                <td>
+                <td>Gambar</td>
+                 <td>
                     <!-- Display the image -->
-                    <img src="{{ Storage::url($indekos->gambar) }}" alt="{{ $indekos->gambar }}" class="img-fluid" style="max-height: 100px; max-width: 100px;">
+                    <img src="{{ Storage::url($kos->gambar) }}" alt="{{ $kos->gambar }}" class="img-fluid" style="max-height: 100px; max-width: 100px;">
                 </td>
             </tr>
             <tr>

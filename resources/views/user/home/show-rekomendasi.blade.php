@@ -4,7 +4,7 @@
 {{-- <section id="rekomendasi" class="my-5">
     <div class="container">
         <div class="row mb-10">
-            
+
         @foreach ($koss as $kos)
             <div class="col-md-4 mb-3">
                 <div class="card" >
@@ -34,11 +34,11 @@
                 </div>
             </div>
         @endforeach
-        
+
         </div>
     </div>
 
-    
+
 </section> --}}
 
 <section>
@@ -47,9 +47,9 @@
             @if ($koss != null)
                 @foreach ($koss as $kos)
                 <div class="col-md-4 mb-3">
-                    
+
                     <div class="card" >
-                        
+
                         <div class="card  text-white">
                             <a href="/home/{{ $kos['slug'] }}"><img src="https://source.unsplash.com/500x500?room" class="card-img" alt="room"></a>
                             <a href="/home/{{ $kos['slug'] }}" class="d-block text-light">
@@ -85,9 +85,9 @@
                         <a href="/home" class="btn btn-primary">kembali</a>
                     </div>
                 </div>
-                
+
             @endif
-            
+
         </div>
     </div>
 </section>
